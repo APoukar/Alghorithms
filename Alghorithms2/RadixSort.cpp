@@ -11,7 +11,7 @@ RadixSort::~RadixSort()
 {
 }
 
-dynlib::Queue RadixSort::sort(dynlib::Queue queue)
+dynlib::Queue RadixSort::sort(dynlib::Queue &queue)
 {
 	int x;
 	dynlib::Queue *t[10];

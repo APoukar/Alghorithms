@@ -5,6 +5,6 @@ class RadixSort
 public:
 	RadixSort();
 	~RadixSort();
-	dynlib::Queue sort(dynlib::Queue queue);
+	dynlib::Queue sort(dynlib::Queue &queue);
 };
 

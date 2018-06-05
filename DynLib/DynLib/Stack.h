@@ -16,6 +16,7 @@ namespace dynlib {
 		void push(int number);
 		int pop();
 		bool isEmpty() const;
+		int show() const;
 	};
 }
 

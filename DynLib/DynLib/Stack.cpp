@@ -70,4 +70,8 @@ namespace dynlib {
 	{
 		return m_array.empty();
 	}
+	int Stack::show() const
+	{
+		return m_array.back();
+	}
 }

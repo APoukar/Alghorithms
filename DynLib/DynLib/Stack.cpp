@@ -7,6 +7,8 @@
 
 namespace dynlib {
 
+#pragma region Private
+
 	void Stack::printStack()
 	{
 		std::list<int> myList;
@@ -20,7 +22,11 @@ namespace dynlib {
 		}
 	}
 
-	Stack::Stack() 
+#pragma endregion Private
+
+#pragma region Ctor
+
+	Stack::Stack()
 	{
 	}
 	Stack::Stack(int length)
@@ -34,13 +40,17 @@ namespace dynlib {
 	{
 	}
 
+#pragma endregion Ctor
+
+#pragma region Public
+
 	void Stack::print(const std::string line)
 	{
 		std::cout << '\n';
 		if (!line.empty())
 		{
 			std::cout << line << '\n';
-		}		
+		}
 		printStack();
 		std::cout << '\n';
 	}
@@ -74,4 +84,9 @@ namespace dynlib {
 	{
 		return m_array.back();
 	}
+
+#pragma endregion Public
+
+
+	
 }
